@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hooksAngular';
+  public title = 'hooksAngular';
+  public showHook:boolean = true;
+
+  dontRenderHookComponent(){
+    this.showHook = false;
+  }
+  
 }
